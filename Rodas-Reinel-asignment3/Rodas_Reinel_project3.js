@@ -181,5 +181,22 @@ var enemiesChamber = function(gold, weapon) {
 var elite = enemiesChamber(3 , weapons[2]);
 	
 console.log("After the fight with the guards I was able to recover " + elite + ".");
-console.log("hahaha it is funny because the total of weapons I cary is " + weapons.length)
+console.log("hahaha it is funny because the total of weapons I cary is " + weapons.length);
+console.log("I get into the King's Chambers and I take out my " + dagger);
+console.log("but one of the elite guards the one with white armor hear me and try to shoot me with his " + eliteguards.eliteWeapons[01]);
 
+var white = {
+	
+			"name" : "Angelo",
+			"chestarmor" : 15,
+			"helmet"	: 12,
+			"pants"		: 14,
+			"defeat"	: function(){
+									// method accesor
+				var totalHealth = this.chestarmor + this.helmet + this.pants;
+				return totalHealth;
+				}
+	
+	};
+
+console.log("I did to him a total damage of " + white.defeat() + ".");
