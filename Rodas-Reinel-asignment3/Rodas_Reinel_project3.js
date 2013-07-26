@@ -188,15 +188,26 @@ console.log("but one of the elite guards the one with white armor hear me and tr
 var white = {
 	
 			"name" : "Angelo",
-			"chestarmor" : 15,
+			"chestArmor" : 15,
 			"helmet"	: 12,
 			"pants"		: 14,
 			"defeat"	: function(){
 									// method accesor
-				var totalHealth = this.chestarmor + this.helmet + this.pants;
+				var totalHealth = this.chestArmor + this.helmet + this.pants;
 				return totalHealth;
-				}
-	
+				}, // end of method accersor
+				// mutator
+			"changeArmor" : function(newArmor){
+				
+				this.chestArmor = newArmor;
+				
+				} //end of mutator
 	};
 
 console.log("I did to him a total damage of " + white.defeat() + ".");
+white.changeArmor(35);
+console.log("oh wait, he got a different armor so the total is " + white.defeat() +".");
+
+
+// JSON
+console.log("I am " + assassinInfo.info[0].age + " old.");
