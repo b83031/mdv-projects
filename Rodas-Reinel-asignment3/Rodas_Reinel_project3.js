@@ -1,5 +1,3 @@
-//alert("JavaScript works!");
-
 // Reinel Rodas 
 // SDI 1307
 // Project 3
@@ -9,6 +7,14 @@ var nickName = "\"Death Touch\"";
 var numberOfGuards = 20;
 var manyGuards = true;
 var weapons = ["dagger","sword","crossbow" ];
+var dagger = "Azurah's Dagger";
+var eliteguards = { eliteBlack1 : "Hard To Kill", 
+					eliteWhite2 : "Easy to Kill",
+					eliteWeapons : [ 
+					"Magic Sword", 
+					"Ruby Crossbow"
+					] 
+				};
 // My first outputs
 
 console.log("My name is " + name + ".");
@@ -139,8 +145,25 @@ var enemiesChamber = function(gold, weapon) {
 	for ( var totalEnemies = 1; totalEnemies <= 3; totalEnemies++) {
 		
 		console.log(totalEnemies + " is down")
+		//nested
+		for ( var totalEnemies = 2; totalEnemies <= 4; totalEnemies++) {
 		
+		console.log(totalEnemies + " is down")
+		
+		if (totalEnemies < 4){
+	
+			
+			console.log("ohh!! there is another one.");
+			
+		} else {
+			
+			console.log("no more guards");
+			
+		};
+		
+	};
 		if (totalEnemies < 3){
+			// nested
 			
 			console.log("ohh!! there is another one.");
 			
